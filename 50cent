@@ -1,0 +1,10 @@
+<?php
+$money = 10000;
+$age = 16;
+for ($money; $money < 1000000; $money = $money + $money/100*10) {
+	$ageC = $age++;
+	echo "$ageC лет, $money рублей на счёте\n";
+}
+
+$ageEnd = $ageC - $age;
+echo "$ageEnd понадобилось.";
